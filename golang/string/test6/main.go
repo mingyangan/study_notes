@@ -16,7 +16,7 @@ func getStringDataAddr(str *string) uintptr {
 // 赋值的字符串，共享数据（哪怕有截取）
 // 非只读区的，不共享数据
 // []byte相同数据不共享
-func (t *testStruct) Test6() {
+func main() {
 	// 只读内存区
 	var str1 = "abc"
 	var str2 = "abc"

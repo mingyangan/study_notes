@@ -8,9 +8,8 @@ import (
 )
 
 // Test3 string --> []byte
-// 不使用只读区
-func (t *testStruct) Test3() {
-	var str = strconv.Itoa(int(time.Now().Nanosecond())) // str:="abc"这种显示的定义字符串，会被分配到只读区
+func main() {
+	var str = strconv.Itoa(int(time.Now().Nanosecond()))
 	var buf []byte
 	strPtr := (*[2]uintptr)(unsafe.Pointer(&str))
 	buf = *(*[]byte)(unsafe.Pointer(&([3]uintptr{strPtr[0], strPtr[1], strPtr[1]})))

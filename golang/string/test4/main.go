@@ -7,7 +7,7 @@ import (
 
 // []byte --> string
 // 验证[]byte转string是有copy的
-func (t *testStruct) Test4() {
+func main() {
 	buf := []byte{'a', 'b', 'c'}
 	str := string(buf)
 

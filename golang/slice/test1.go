@@ -31,7 +31,6 @@ func (t *testSlice) Test1() {
 	fmt.Printf("Slice Append 4, slice data:%v\n", slice)
 	println()
 
-	// 验证是否还有关联
 	slice[0] = 100
 	fmt.Printf("Change slice[0] = 100, Array data:%v\n", arr)
 	fmt.Printf("Change slice[0] = 100, slice data:%v\n", slice)

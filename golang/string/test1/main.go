@@ -7,7 +7,7 @@ import (
 
 // Test1 string --> []byte
 // 验证string转[]byte是有copy的
-func (t *testStruct) Test1() {
+func main() {
 	var str = "abc"
 	buf := []byte(str)
 

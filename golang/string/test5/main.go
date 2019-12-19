@@ -7,7 +7,7 @@ import (
 
 // Test5 []byte --> string
 // 实现无copy的[]byte转string
-func (t *testStruct) Test5() {
+func main() {
 	buf := []byte{'a', 'b', 'c'}
 
 	str := *(*string)(unsafe.Pointer(&buf))

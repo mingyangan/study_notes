@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Test2 底层数组
+// Test2 append
 func (t *testSlice) Test2() {
 	var slice []int
 	fmt.Printf("Init, slice len:%d, cap:%d, data:%v\n", len(slice), cap(slice), slice)
